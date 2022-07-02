@@ -10,7 +10,7 @@
   - `$var`
 - period `.` is used for concatination
   - `echo 'Hello ,' . $var;`
-- double quotes for printing the variable in a string 
+- double quotes for printing the variable in a string
   - `echo "Hello , $var";`
 - curly braces can be used for better readability
   - `echo "Hello, {$var}";`
@@ -26,13 +26,42 @@
   - useful for making sure no html is parsed in `$_GET` , aka sanitize
 - use `<?=` as a shorthand for `<?php echo`
 - end css statements with `;`
-- comment out html with `<! -- this is a comment -->`
+- comment out html with `<!-- this is a comment -->`
 
 ---
 
 ## Step 5: Seperate Logic From Presentation
 
 - `require <file.php>` loads an external php file
-  - allows seperation of logig and rendering
+  - allows seperation of logic and rendering
 
 ---
+
+## Step 6: Understanding Arrays
+
+- `$myArray[]` defines an empty array
+- assign values  
+
+  ```php
+  $myArray=[  
+   'item1',
+   'item2'
+   ]
+   ```
+
+- loop over array
+
+  ```php
+  <?php foreach($myArray, as $item){
+    // do stuff 
+  }
+  ?>
+  ```
+
+  - or
+
+  ```php
+  <?php foreach($myArray,as $item) : ?>
+  // do stuff
+  <?php endforeach; ?>
+  ```
