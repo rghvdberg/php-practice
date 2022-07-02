@@ -8,7 +8,7 @@
 - commands operations end with `;`
 - variables start with `$`
   - `$var`
-- period `.` is used for concatination
+- period `.` is used for concatenation
   - `echo 'Hello ,' . $var;`
 - double quotes for printing the variable in a string
   - `echo "Hello , $var";`
@@ -30,10 +30,10 @@
 
 ---
 
-## Step 5: Seperate Logic From Presentation
+## Step 5: Separate Logic From Presentation
 
 - `require <file.php>` loads an external php file
-  - allows seperation of logic and rendering
+  - allows separation of logic and rendering
 
 ---
 
@@ -65,3 +65,18 @@
   // do stuff
   <?php endforeach; ?>
   ```
+
+---
+
+## Step 7: Associative Arrays
+
+- key value pairs use arrow `=>`
+  - `$myArray['key'=>'value]`
+- add key/value to existing array `$myArray['newKey']='newValue'`
+- add value to non associative array `myArray[]='newValue'`
+- remove key/value `unset(myArray['key'])`
+- dump variable info with `var_dump($myVar)`
+- `die('message')` stops execution
+  - e.g. `die(var_dump($myVar))`
+  
+---
