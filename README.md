@@ -80,3 +80,12 @@
   - e.g. `die(var_dump($myVar))`
   
 ---
+
+## Step 8: Booleans
+
+- boolean values `true` / `false`
+  - e.g. `$completed = true;`
+- ternary operator `$condition ? 'do this when true' : 'do this when false';`
+- `ucwords('uppercase the first character of each word in a string')`
+
+---
