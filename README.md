@@ -89,3 +89,39 @@
 - `ucwords('uppercase the first character of each word in a string')`
 
 ---
+
+## Step 9: Conditionals
+
+- ```php
+  <?php 
+    if (condition) {
+      // do stuff
+    }
+    else {
+      // do stuff
+      }
+  ?>
+  ```
+  
+- or
+  
+  ```php
+  <?php if(condition) : ?>
+    // do html stuff
+  <?php endif; ?>
+  ```
+
+- with `else`
+  
+  ```php
+  <?php if(condition) : ?>
+    //do html stuff
+  <?php else : ?>
+    // do other html stuff
+  <?php endif; ?>
+  ```
+
+- use `!` for _not_
+  - `! true` == `false`
+
+- <https://www.w3schools.com/charsets/ref_utf_dingbats.asp>
