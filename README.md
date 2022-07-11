@@ -125,3 +125,20 @@
   - `! true` == `false`
 
 - <https://www.w3schools.com/charsets/ref_utf_dingbats.asp>
+
+---
+
+## Step 10 : Functions
+
+- ```php
+  function functionName($arg){
+    // do stuff
+    
+    // optionally return
+    $returnValue = true;
+    
+    return $returnValue;
+  }
+  ```
+  
+---
