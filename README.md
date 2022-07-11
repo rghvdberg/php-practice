@@ -142,3 +142,65 @@
   ```
   
 ---
+
+## Step 11 : MySQL 101
+
+- using mariadb instead of mysql ;-) 
+- cd into step_11
+  - `docker compose up -d`
+  - `docker compose exec db mariadb -uroot`
+- sql commands end with `;`
+- some commands
+  - `show databases;`
+  - `create databases mytodos;`
+  - `use mytodos;`
+  
+  - ```sql
+    create table todos (id integer PRIMARY KEY AUTO_INCREMENT,
+                        description  text NOT NULL,
+                        completed boolean NOT NULL);
+    ```
+  
+  - ```sql
+    show tables;
+    +------------------+
+    | Tables_in_mytodo |
+    +------------------+
+    | todos            |
+    +------------------+
+    1 row in set (0.016 sec)
+
+    ```
+
+  - ```sql
+    describe todos;
+    +-------------+------------+------+-----+---------+----------------+
+    | Field       | Type       | Null | Key | Default | Extra          |
+    +-------------+------------+------+-----+---------+----------------+
+    | id          | int(11)    | NO   | PRI | NULL    | auto_increment |
+    | description | text       | NO   |     | NULL    |                |
+    | completed   | tinyint(1) | NO   |     | NULL    |                |
+    +-------------+------------+------+-----+---------+----------------+
+    3 rows in set (0.097 sec)
+    ```
+  
+  - `drop table table_name;`
+  - insert new record
+
+    - ```sql
+      insert into todos (description, completed ) values('Go to the store', false);
+      ```
+
+  - show records
+
+    - ```sql
+      select * from todos;
+      +----+-----------------+-----------+
+      | id | description     | completed |
+      +----+-----------------+-----------+
+      |  1 | Go to the store |         0 |
+      +----+-----------------+-----------+
+      1 row in set (0.001 sec)
+      ```
+
+---
