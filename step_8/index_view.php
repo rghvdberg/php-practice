@@ -3,15 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Step 7</title>
-    <style>
-    header {
-        background: #e3e3e3;
-        padding: 2em;
-        text-align: center;
-    }
-    </style>
-
+    <title>Step 8</title>
 </head>
 
 <body>
