@@ -52,7 +52,7 @@
 - loop over array
 
   ```php
-  <?php foreach($myArray, as $item){
+  <?php foreach($myArray as $item){
     // do stuff 
   }
   ?>
@@ -61,7 +61,7 @@
   - or
 
   ```php
-  <?php foreach($myArray,as $item) : ?>
+  <?php foreach($myArray as $item) : ?>
   // do stuff
   <?php endforeach; ?>
   ```
@@ -145,7 +145,7 @@
 
 ## Step 11 : MySQL 101
 
-- using mariadb instead of mysql ;-) 
+- using mariadb instead of mysql ;-)
 - cd into step_11
   - `docker compose up -d`
   - `docker compose exec db mariadb -uroot`
@@ -202,5 +202,20 @@
       +----+-----------------+-----------+
       1 row in set (0.001 sec)
       ```
+
+---
+
+## Step 12 : Classes 101
+
+- define a class with `class`
+- properties
+  - `protected $prop`
+  - can also be 'private' and 'public'
+- constructor `public function __construct($prop)`
+- access member functions and properties with `$this->prop`
+  - **note that `prop` gets no `$`**
+- create new object with `new`
+  - `new myClass('property');`
+    - constructors can take arguments
 
 ---
