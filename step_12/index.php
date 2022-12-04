@@ -1,38 +1,41 @@
  <?php
 
-class Task {
-    // properties
-    protected $description;
-    protected $completed;
-
-    // constructor
-    public function __construct ($description)
+    class Task
     {
-        $this->description = $description;
+        // properties
+        protected $description;
+        protected $completed = false;
+
+        // constructor
+        public function __construct($description)
+        {
+            $this->description = $description;
+        }
+
+        public function getDescription()
+        {
+            // notice no $ before property
+            return $this->description;
+        }
+
+        public function isCompleted()
+        {
+            return $this->completed;
+        }
+
+        public function setCompleted($completed)
+        {
+            $this->completed = $completed;
+        }
     }
-    
-    public function getDescription(){
-        // notice no $ before property
-        return $this->description;
-    }
 
-    public function isCompleted(){
-        return $this->completed;
-    }
+    $tasks = [
+        new Task('Learn PHP'),
+        new Task('Listen to Martijn'),
+        new Task('Make coffee')
+    ];
 
-    public function setCompleted($completed){
-         $this->completed = $completed;
-    }
-    
-}
- 
-$tasks = [
-    new Task('Learn PHP'),
-    new Task('Listen to Martijn'),
-    new Task('Make coffee')
-];
-
-$tasks[1]->setCompleted(true);
+    $tasks[1]->setCompleted(true);
 
 
-require 'index.view.php';
+    require 'index.view.php';
