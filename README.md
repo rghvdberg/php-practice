@@ -152,7 +152,7 @@
 - sql commands end with `;`
 - some commands
   - `show databases;`
-  - `create databases mytodos;`
+  - `create database mytodos;`
   - `use mytodos;`
   
   - ```sql
