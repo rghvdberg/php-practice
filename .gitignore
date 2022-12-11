@@ -1,4 +1,4 @@
 
-.vscode/
-database
-sandbox
+/.vscode/
+/database
+/sandbox
