@@ -219,3 +219,15 @@
     - constructors can take arguments
 
 ---
+
+## Step 13 : Intro to PDO
+
+- <https://www.php.net/manual/en/book.pdo.php>
+- connect to database with
+  - SQLite: `PDO("sqlite:path_to_db);`
+  - MySQL: `PDO('mysql:host=172.21.0.2;dbname=mytodos', 'root', '');`
+
+- query in two parts
+  - `prepare('QUERY_STRING')`
+  - `execute()`
+ 

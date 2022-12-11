@@ -8,9 +8,14 @@ services:
     restart: "no"
     environment:
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: "yes"
+    volumes:
+      - ./database:/var/lib/mysql
 
-  # adminer:
-  #   image: adminer
-  #   restart: always
-  #   ports:
-  #     - 8080:8080
+  adminer:
+    image: adminer
+    restart: "no"
+    ports:
+      - 8080:8080
+
+volumes:
+  database:
