@@ -230,4 +230,11 @@
 - query in two parts
   - `prepare('QUERY_STRING')`
   - `execute()`
- 
+
+---
+
+## Step 14 : Refactoring and Collaborators
+
+- split and move different functions over different files
+- `static` function : use function without instantiating a class
+- NOTE: php files can return value (see `bootstrap.php`)
