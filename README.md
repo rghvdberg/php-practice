@@ -233,8 +233,12 @@
 
 ---
 
-## Step 14 : Refactoring and Collaborators
+## Step 14 : PDO Refactoring and Collaborators
 
 - split and move different functions over different files
 - `static` function : use function without instantiating a class
 - NOTE: php files can return value (see `bootstrap.php`)
+
+## Step 15 : Hide Your Secret Passwords
+
+- move database configurations in `config.php`
