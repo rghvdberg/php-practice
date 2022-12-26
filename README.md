@@ -239,6 +239,21 @@
 - `static` function : use function without instantiating a class
 - NOTE: php files can return value (see `bootstrap.php`)
 
+---
+
 ## Step 15 : Hide Your Secret Passwords
 
 - move database configurations in `config.php`
+
+---
+
+## Step 16 : Make a Router
+
+- restructure code in **core** / **controllers** / **views**
+- `$_SERVER['REQUEST_URI']` returns URI
+- `static` function `Router::load($var)` 
+  - create new `Router` object with `$router = new static;`
+  - can't return `$this` because it's a static object
+  - use `return $router`
+
+---
